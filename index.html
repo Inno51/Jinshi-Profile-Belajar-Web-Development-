@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wuthering Waves Jinshi Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Note: Click anywhere to play the audio/song. 
+        <br>
+        Original song: "Ultimate Discipline" by WUKONG, "HONOR HIM" Gladiator Soundtrack</h1>
+
+<div class="kotak">
+    <h1>The Story of Jinshi</h1>
+    <p>Jinshi is the young Magistrate of Jinzhou in the world of Solaris-3 in the game Wuthering Waves. She is known as a calm, wise, and responsible leader who deeply cares for her people. From a young age, Jinshi was destined to become a Resonator connected to the Sentinel Jué, a powerful guardian that protects the balance of Jinzhou. Even though she is still young, she carries the heavy responsibility of defending the city from Tacet Discord threats. Many people respect her for her gentle yet firm leadership style.
+    </p>
+    <p>Behind her official role, Jinshi often works quietly in the shadows to protect Jinzhou. She does not always appear in public, instead managing situations through trusted agents like Sanhua. This makes her seem mysterious, but in reality, she is deeply committed to the safety of her citizens. Jinshi believes a true leader must be willing to sacrifice for a better future. Because of this, she often places herself in difficult positions to ensure the city’s survival.</p>
+    <p>One day, Jinshi begins to notice a growing disturbance that threatens the balance of Jinzhou. Together with other Resonators, she tries to uncover the origin of this danger. Along the way, she also confronts the Fractsidus organization, which seeks to accelerate the world’s destruction. Despite the pressure, Jinshi remains calm and trusts in cooperation and unity. Her decisions are constantly tested, but she always tries to choose the safest path for her people.</p>
+    <p>During this journey, Jinshi also deepens her spiritual connection with Sentinel Jué. This bond is not only a source of power but also a heavy responsibility. She must learn to understand the history and destiny passed down to her. As she grows stronger, she realizes her role is not only to govern but also to protect the balance of the world. This understanding helps her mature in facing greater conflicts.</p>
+    <p>In the end, Jinshi becomes a symbol of hope for Jinzhou and beyond. She leads not only with authority but also with compassion and wisdom. Even as many challenges arise, she stands firm for the future of Solaris-3. Her journey shows that leadership means continuous sacrifice, even when the world is on the brink of collapse. Her story in Wuthering Waves reflects the burden and sacrifice of a true guardian of the city.</p>
+    <a href="halaman2.html" class="btn" id="finishBtn">Finish Reading</a>
+</div>
+
+
+<audio id="bg-audio" autoplay loop>
+    <source src="audios/Ultimate Discipline.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    document.getElementById('finishBtn').addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent the default link behavior
+        document.body.classList.add('fade-out'); // Add the fade-out class
+        setTimeout(() => {
+            window.location.href = 'halaman2.html';
+        }, 1000); // Match the duration of the fade-out effect
+    });
+
+    window.addEventListener('load', function(){
+        const music = document.getElementById('bg-audio');
+
+    document.body.addEventListener('click', () => {
+        music.play();
+    }, { once: true });
+}); 
+</script>
+
+<video autoplay muted loop id="bg-video">
+    <source src="images/jinhsi-falling-light.1920x1080.mp4" type="video/mp4">
+</video>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="halaman2.css">
+</head>
+<body>
+ 
+    <p id="dialog-text"></p>
+
+    <audio id="bg-audio" autoplay loop>
+        <source src="audios/HONOR HIM - Gladiator Soundtrack  EPIC VERSION.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        window.addEventListener('load', function(){
+            const music = document.getElementById('bg-audio');
+
+        document.body.addEventListener('click', () => {
+            music.play();
+        }, { once: true });
+    });
+    </script>
+
+    <video autoplay muted loop id="bg-video">
+    <source src="images/jinhsi-dragon-form.1920x1080.mp4" type="video/mp4">
+</video>
+
+<p id="dialog-text"></p>
+
+<script src="halaman2.js"></script>
+
+</body>
+</html>

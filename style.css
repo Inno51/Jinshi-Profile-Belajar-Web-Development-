@@ -1,0 +1,111 @@
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    text-align: justify;
+    text-overflow: hidden;   
+    color: rgb(255, 164, 183);
+    text-shadow: 0 0 2px rgba(255, 56, 56, 5);
+    
+}
+
+body {
+   background-color: lightgray;
+   font-family: Arial, sans-serif;
+   line-height: 1.5;
+   
+}
+
+.kotak{
+    animation: fadeIn 5s ease;
+    background-color: rgba(241, 157, 157, 0.1);
+    backdrop-filter: blur(2.5px);
+    width: 800px;
+    padding: 50px;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 15px; 
+    box-shadow: 0 0 10px rgb(255, 130, 81); 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.kotak h1 {
+    font-family: 'Almendra', 'Cinzel Decorative', 'Georgia', serif;
+    text-align: center;
+    color: #ffe7c2;
+    text-shadow: 0 0 10px rgb(255, 0, 0);
+    font-size: 50px;
+}
+
+.kotak p {
+    font-family: Poppins, sans serif;
+     text-align: justify;
+     color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(0, 0, 0, 2.5);
+    font-size: 20px;
+}
+
+#bg-audio {
+    position: relative;
+    z-index: 2;
+}
+
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: 50% 0%;
+    z-index: -1;
+
+}
+
+body{
+    transition: 
+    opacity 1s ease;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.btn {
+    font-family: 'Almendra', 'Cinzel Decorative', 'Georgia', serif;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    width: fit-content;
+    margin: 50px auto;
+    transition: 1s;
+}
+
+.btn hover{
+    background-color: rgb(255, 255,255, 0.4);
+    transform: scale(1.05);
+    box-shadow: 0 0 5px rgb(31, 31, 31);
+    align-items: center;
+}
+
